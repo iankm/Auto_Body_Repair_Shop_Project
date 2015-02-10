@@ -1,0 +1,1520 @@
+1.a)
+====
+
+Enter maximum range: 
+Number of operations: 
+Enter seed: 
+Enter print option (0 for no keys, 1 for keys): 
+
+Printing after: 100 operations.
+Level: 0, Number of Keys: 2
+0: [ 25, 69 ]
+1: [ 20, 72 ]
+Level: 3, Number of Keys: 1
+0: [ 92, 87 ]
+Level: 3, Number of Keys: 5
+0: [ 27, 7 ]
+1: [ 57, 65 ]
+2: [ 2, 52 ]
+3: [ 37, 89 ]
+4: [ 12, 98 ]
+Level: 1, Number of Keys: 3
+0: [ 9, 40 ]
+1: [ 89, 80 ]
+2: [ 94, 96 ]
+Level: 1, Number of Keys: 5
+0: [ 36, 14 ]
+1: [ 81, 26 ]
+2: [ 51, 39 ]
+3: [ 71, 50 ]
+4: [ 66, 88 ]
+Level: 1, Number of Keys: 4
+0: [ 43, 19 ]
+1: [ 13, 47 ]
+2: [ 18, 61 ]
+3: [ 8, 92 ]
+Deepest level: 3
+Number of steps taken: 440
+Number of nodes: 9
+
+Printing after: 200 operations.
+Level: 0, Number of Keys: 4
+0: [ 10, 157 ]
+1: [ 20, 72 ]
+2: [ 70, 186 ]
+3: [ 85, 190 ]
+Level: 3, Number of Keys: 3
+0: [ 92, 87 ]
+1: [ 82, 143 ]
+2: [ 97, 144 ]
+Level: 3, Number of Keys: 4
+0: [ 27, 7 ]
+1: [ 57, 65 ]
+2: [ 12, 98 ]
+3: [ 37, 89 ]
+Level: 3, Number of Keys: 2
+0: [ 89, 80 ]
+1: [ 94, 96 ]
+Level: 3, Number of Keys: 5
+0: [ 9, 40 ]
+1: [ 64, 101 ]
+2: [ 44, 121 ]
+3: [ 74, 145 ]
+4: [ 19, 154 ]
+Level: 1, Number of Keys: 5
+0: [ 81, 26 ]
+1: [ 36, 14 ]
+2: [ 51, 39 ]
+3: [ 71, 50 ]
+4: [ 11, 124 ]
+Level: 1, Number of Keys: 4
+0: [ 43, 19 ]
+1: [ 13, 47 ]
+2: [ 18, 61 ]
+3: [ 8, 92 ]
+Deepest level: 3
+Number of steps taken: 1014
+Number of nodes: 12
+
+Printing after: 300 operations.
+Level: 0, Number of Keys: 5
+0: [ 10, 157 ]
+1: [ 20, 72 ]
+2: [ 45, 245 ]
+3: [ 35, 233 ]
+4: [ 30, 293 ]
+Level: 3, Number of Keys: 3
+0: [ 92, 87 ]
+1: [ 82, 143 ]
+2: [ 97, 144 ]
+Level: 0, Number of Keys: 1
+0: [ 62, 252 ]
+Level: 5, Number of Keys: 3
+0: [ 57, 65 ]
+1: [ 47, 208 ]
+2: [ 52, 232 ]
+Level: 5, Number of Keys: 3
+0: [ 37, 89 ]
+1: [ 12, 98 ]
+2: [ 42, 277 ]
+Level: 3, Number of Keys: 3
+0: [ 89, 80 ]
+1: [ 94, 96 ]
+2: [ 79, 291 ]
+Level: 3, Number of Keys: 5
+0: [ 64, 101 ]
+1: [ 74, 145 ]
+2: [ 9, 40 ]
+3: [ 44, 121 ]
+4: [ 19, 154 ]
+Level: 1, Number of Keys: 5
+0: [ 81, 26 ]
+1: [ 36, 14 ]
+2: [ 51, 39 ]
+3: [ 71, 50 ]
+4: [ 11, 124 ]
+Level: 3, Number of Keys: 1
+0: [ 93, 234 ]
+Level: 5, Number of Keys: 1
+0: [ 43, 19 ]
+Level: 5, Number of Keys: 5
+0: [ 13, 47 ]
+1: [ 18, 61 ]
+2: [ 8, 92 ]
+3: [ 3, 228 ]
+4: [ 28, 235 ]
+Deepest level: 5
+Number of steps taken: 1743
+Number of nodes: 22
+
+Printing after: 400 operations.
+Level: 6, Number of Keys: 5
+0: [ 10, 157 ]
+1: [ 20, 72 ]
+2: [ 30, 293 ]
+3: [ 15, 337 ]
+4: [ 25, 390 ]
+Level: 6, Number of Keys: 2
+0: [ 35, 233 ]
+1: [ 40, 318 ]
+Level: 5, Number of Keys: 2
+0: [ 45, 245 ]
+1: [ 50, 333 ]
+Level: 0, Number of Keys: 2
+0: [ 60, 327 ]
+1: [ 75, 346 ]
+Level: 3, Number of Keys: 2
+0: [ 97, 144 ]
+1: [ 82, 143 ]
+Level: 0, Number of Keys: 1
+0: [ 62, 252 ]
+Level: 5, Number of Keys: 3
+0: [ 57, 65 ]
+1: [ 47, 208 ]
+2: [ 52, 232 ]
+Level: 5, Number of Keys: 5
+0: [ 37, 89 ]
+1: [ 12, 98 ]
+2: [ 42, 277 ]
+3: [ 27, 372 ]
+4: [ 22, 380 ]
+Level: 1, Number of Keys: 5
+0: [ 89, 80 ]
+1: [ 79, 291 ]
+2: [ 64, 101 ]
+3: [ 74, 145 ]
+4: [ 9, 40 ]
+Level: 1, Number of Keys: 4
+0: [ 11, 124 ]
+1: [ 71, 50 ]
+2: [ 51, 39 ]
+3: [ 56, 360 ]
+Level: 3, Number of Keys: 2
+0: [ 93, 234 ]
+1: [ 78, 348 ]
+Level: 4, Number of Keys: 2
+0: [ 73, 384 ]
+1: [ 63, 396 ]
+Level: 5, Number of Keys: 2
+0: [ 43, 19 ]
+1: [ 48, 386 ]
+Level: 5, Number of Keys: 5
+0: [ 13, 47 ]
+1: [ 28, 235 ]
+2: [ 8, 92 ]
+3: [ 3, 228 ]
+4: [ 23, 389 ]
+Deepest level: 6
+Number of steps taken: 2458
+Number of nodes: 28
+
+Printing after: 500 operations.
+Level: 6, Number of Keys: 5
+0: [ 10, 157 ]
+1: [ 20, 72 ]
+2: [ 30, 293 ]
+3: [ 15, 337 ]
+4: [ 25, 390 ]
+Level: 6, Number of Keys: 2
+0: [ 35, 233 ]
+1: [ 40, 318 ]
+Level: 5, Number of Keys: 2
+0: [ 45, 245 ]
+1: [ 50, 333 ]
+Level: 0, Number of Keys: 2
+0: [ 60, 327 ]
+1: [ 75, 346 ]
+Level: 0, Number of Keys: 1
+0: [ 100, 445 ]
+Level: 3, Number of Keys: 1
+0: [ 97, 144 ]
+Level: 0, Number of Keys: 1
+0: [ 62, 252 ]
+Level: 5, Number of Keys: 3
+0: [ 57, 65 ]
+1: [ 47, 208 ]
+2: [ 52, 232 ]
+Level: 5, Number of Keys: 3
+0: [ 37, 89 ]
+1: [ 42, 277 ]
+2: [ 27, 372 ]
+Level: 3, Number of Keys: 3
+0: [ 89, 80 ]
+1: [ 79, 291 ]
+2: [ 99, 477 ]
+Level: 3, Number of Keys: 4
+0: [ 64, 101 ]
+1: [ 74, 145 ]
+2: [ 9, 40 ]
+3: [ 24, 425 ]
+Level: 1, Number of Keys: 3
+0: [ 61, 452 ]
+1: [ 71, 50 ]
+2: [ 51, 39 ]
+Level: 3, Number of Keys: 2
+0: [ 93, 234 ]
+1: [ 88, 482 ]
+Level: 4, Number of Keys: 2
+0: [ 73, 384 ]
+1: [ 63, 396 ]
+Level: 5, Number of Keys: 3
+0: [ 43, 19 ]
+1: [ 48, 386 ]
+2: [ 53, 481 ]
+Level: 5, Number of Keys: 5
+0: [ 13, 47 ]
+1: [ 28, 235 ]
+2: [ 8, 92 ]
+3: [ 3, 228 ]
+4: [ 23, 389 ]
+Deepest level: 6
+Number of steps taken: 3131
+Number of nodes: 32
+
+Printing after: 600 operations.
+Level: 6, Number of Keys: 4
+0: [ 10, 157 ]
+1: [ 20, 72 ]
+2: [ 30, 293 ]
+3: [ 15, 337 ]
+Level: 6, Number of Keys: 2
+0: [ 35, 233 ]
+1: [ 40, 318 ]
+Level: 5, Number of Keys: 2
+0: [ 45, 245 ]
+1: [ 50, 333 ]
+Level: 0, Number of Keys: 2
+0: [ 60, 327 ]
+1: [ 65, 512 ]
+Level: 0, Number of Keys: 1
+0: [ 100, 445 ]
+Level: 3, Number of Keys: 2
+0: [ 97, 144 ]
+1: [ 87, 552 ]
+Level: 0, Number of Keys: 1
+0: [ 77, 564 ]
+Level: 5, Number of Keys: 2
+0: [ 52, 232 ]
+1: [ 47, 208 ]
+Level: 5, Number of Keys: 4
+0: [ 37, 89 ]
+1: [ 7, 511 ]
+2: [ 27, 372 ]
+3: [ 42, 530 ]
+Level: 3, Number of Keys: 4
+0: [ 89, 80 ]
+1: [ 79, 291 ]
+2: [ 99, 477 ]
+3: [ 94, 549 ]
+Level: 3, Number of Keys: 5
+0: [ 9, 40 ]
+1: [ 24, 425 ]
+2: [ 29, 516 ]
+3: [ 74, 543 ]
+4: [ 59, 553 ]
+Level: 1, Number of Keys: 2
+0: [ 51, 39 ]
+1: [ 71, 50 ]
+Level: 3, Number of Keys: 3
+0: [ 93, 234 ]
+1: [ 88, 482 ]
+2: [ 78, 576 ]
+Level: 4, Number of Keys: 2
+0: [ 63, 396 ]
+1: [ 73, 514 ]
+Level: 5, Number of Keys: 2
+0: [ 43, 19 ]
+1: [ 48, 386 ]
+Level: 5, Number of Keys: 5
+0: [ 28, 235 ]
+1: [ 13, 47 ]
+2: [ 18, 509 ]
+3: [ 3, 228 ]
+4: [ 23, 389 ]
+Deepest level: 6
+Number of steps taken: 3852
+Number of nodes: 32
+
+Printing after: 700 operations.
+Level: 3, Number of Keys: 5
+0: [ 10, 157 ]
+1: [ 15, 337 ]
+2: [ 30, 293 ]
+3: [ 60, 327 ]
+4: [ 65, 512 ]
+Level: 0, Number of Keys: 3
+0: [ 100, 445 ]
+1: [ 80, 612 ]
+2: [ 90, 674 ]
+Level: 0, Number of Keys: 3
+0: [ 77, 564 ]
+1: [ 67, 675 ]
+2: [ 62, 700 ]
+Level: 5, Number of Keys: 2
+0: [ 52, 232 ]
+1: [ 47, 208 ]
+Level: 5, Number of Keys: 5
+0: [ 37, 89 ]
+1: [ 7, 511 ]
+2: [ 27, 372 ]
+3: [ 42, 530 ]
+4: [ 17, 642 ]
+Level: 3, Number of Keys: 5
+0: [ 89, 80 ]
+1: [ 79, 291 ]
+2: [ 99, 477 ]
+3: [ 94, 549 ]
+4: [ 84, 699 ]
+Level: 4, Number of Keys: 3
+0: [ 74, 543 ]
+1: [ 59, 553 ]
+2: [ 64, 627 ]
+Level: 4, Number of Keys: 4
+0: [ 9, 40 ]
+1: [ 24, 425 ]
+2: [ 29, 516 ]
+3: [ 54, 634 ]
+Level: 1, Number of Keys: 5
+0: [ 51, 39 ]
+1: [ 36, 633 ]
+2: [ 96, 668 ]
+3: [ 71, 680 ]
+4: [ 41, 692 ]
+Level: 3, Number of Keys: 2
+0: [ 93, 234 ]
+1: [ 78, 576 ]
+Level: 4, Number of Keys: 2
+0: [ 63, 396 ]
+1: [ 73, 514 ]
+Level: 5, Number of Keys: 1
+0: [ 43, 19 ]
+Level: 5, Number of Keys: 5
+0: [ 38, 660 ]
+1: [ 28, 235 ]
+2: [ 23, 389 ]
+3: [ 18, 509 ]
+4: [ 3, 228 ]
+Deepest level: 6
+Number of steps taken: 4526
+Number of nodes: 27
+
+Printing after: 800 operations.
+Level: 6, Number of Keys: 4
+0: [ 10, 157 ]
+1: [ 15, 337 ]
+2: [ 30, 293 ]
+3: [ 5, 721 ]
+Level: 6, Number of Keys: 2
+0: [ 40, 738 ]
+1: [ 35, 772 ]
+Level: 5, Number of Keys: 1
+0: [ 50, 724 ]
+Level: 4, Number of Keys: 2
+0: [ 60, 327 ]
+1: [ 65, 512 ]
+Level: 0, Number of Keys: 3
+0: [ 95, 705 ]
+1: [ 80, 612 ]
+2: [ 90, 674 ]
+Level: 0, Number of Keys: 2
+0: [ 92, 729 ]
+1: [ 82, 736 ]
+Level: 0, Number of Keys: 2
+0: [ 77, 564 ]
+1: [ 62, 700 ]
+Level: 4, Number of Keys: 5
+0: [ 52, 232 ]
+1: [ 37, 89 ]
+2: [ 7, 511 ]
+3: [ 17, 642 ]
+4: [ 42, 530 ]
+Level: 3, Number of Keys: 5
+0: [ 89, 80 ]
+1: [ 79, 291 ]
+2: [ 99, 477 ]
+3: [ 94, 549 ]
+4: [ 84, 699 ]
+Level: 4, Number of Keys: 4
+0: [ 74, 543 ]
+1: [ 59, 553 ]
+2: [ 64, 627 ]
+3: [ 69, 737 ]
+Level: 5, Number of Keys: 1
+0: [ 54, 634 ]
+Level: 6, Number of Keys: 2
+0: [ 39, 739 ]
+1: [ 34, 765 ]
+Level: 6, Number of Keys: 4
+0: [ 9, 40 ]
+1: [ 24, 425 ]
+2: [ 29, 516 ]
+3: [ 14, 783 ]
+Level: 3, Number of Keys: 2
+0: [ 96, 668 ]
+1: [ 91, 710 ]
+Level: 4, Number of Keys: 2
+0: [ 71, 680 ]
+1: [ 61, 707 ]
+Level: 4, Number of Keys: 5
+0: [ 51, 39 ]
+1: [ 36, 633 ]
+2: [ 41, 692 ]
+3: [ 11, 745 ]
+4: [ 31, 725 ]
+Level: 3, Number of Keys: 2
+0: [ 78, 576 ]
+1: [ 83, 789 ]
+Level: 4, Number of Keys: 2
+0: [ 63, 396 ]
+1: [ 73, 514 ]
+Level: 6, Number of Keys: 1
+0: [ 38, 660 ]
+Level: 6, Number of Keys: 5
+0: [ 28, 235 ]
+1: [ 23, 389 ]
+2: [ 18, 509 ]
+3: [ 3, 228 ]
+4: [ 8, 730 ]
+Deepest level: 6
+Number of steps taken: 5318
+Number of nodes: 42
+
+Printing after: 900 operations.
+Level: 6, Number of Keys: 4
+0: [ 10, 157 ]
+1: [ 15, 337 ]
+2: [ 30, 293 ]
+3: [ 5, 721 ]
+Level: 6, Number of Keys: 2
+0: [ 40, 738 ]
+1: [ 35, 772 ]
+Level: 5, Number of Keys: 1
+0: [ 50, 724 ]
+Level: 4, Number of Keys: 1
+0: [ 65, 512 ]
+Level: 0, Number of Keys: 3
+0: [ 95, 705 ]
+1: [ 80, 612 ]
+2: [ 90, 674 ]
+Level: 0, Number of Keys: 1
+0: [ 92, 729 ]
+Level: 0, Number of Keys: 2
+0: [ 77, 564 ]
+1: [ 62, 700 ]
+Level: 4, Number of Keys: 4
+0: [ 42, 530 ]
+1: [ 37, 89 ]
+2: [ 7, 511 ]
+3: [ 17, 642 ]
+Level: 3, Number of Keys: 4
+0: [ 89, 80 ]
+1: [ 79, 291 ]
+2: [ 99, 477 ]
+3: [ 84, 699 ]
+Level: 4, Number of Keys: 3
+0: [ 69, 737 ]
+1: [ 59, 553 ]
+2: [ 64, 627 ]
+Level: 5, Number of Keys: 1
+0: [ 54, 634 ]
+Level: 6, Number of Keys: 2
+0: [ 39, 739 ]
+1: [ 34, 765 ]
+Level: 6, Number of Keys: 5
+0: [ 9, 40 ]
+1: [ 24, 425 ]
+2: [ 19, 843 ]
+3: [ 14, 783 ]
+4: [ 4, 900 ]
+Level: 3, Number of Keys: 2
+0: [ 96, 668 ]
+1: [ 91, 710 ]
+Level: 4, Number of Keys: 2
+0: [ 71, 680 ]
+1: [ 66, 829 ]
+Level: 5, Number of Keys: 1
+0: [ 56, 857 ]
+Level: 6, Number of Keys: 2
+0: [ 41, 692 ]
+1: [ 36, 875 ]
+Level: 6, Number of Keys: 4
+0: [ 11, 745 ]
+1: [ 31, 725 ]
+2: [ 21, 810 ]
+3: [ 1, 817 ]
+Level: 3, Number of Keys: 3
+0: [ 78, 576 ]
+1: [ 83, 789 ]
+2: [ 88, 818 ]
+Level: 4, Number of Keys: 2
+0: [ 63, 396 ]
+1: [ 73, 514 ]
+Level: 5, Number of Keys: 1
+0: [ 48, 889 ]
+Level: 5, Number of Keys: 5
+0: [ 38, 660 ]
+1: [ 28, 235 ]
+2: [ 23, 389 ]
+3: [ 18, 509 ]
+4: [ 3, 228 ]
+Deepest level: 6
+Number of steps taken: 6023
+Number of nodes: 45
+
+Printing after: 1000 operations.
+Level: 6, Number of Keys: 4
+0: [ 10, 157 ]
+1: [ 15, 337 ]
+2: [ 30, 293 ]
+3: [ 5, 721 ]
+Level: 6, Number of Keys: 2
+0: [ 40, 738 ]
+1: [ 35, 772 ]
+Level: 5, Number of Keys: 1
+0: [ 50, 724 ]
+Level: 4, Number of Keys: 2
+0: [ 65, 512 ]
+1: [ 70, 976 ]
+Level: 0, Number of Keys: 3
+0: [ 95, 705 ]
+1: [ 80, 612 ]
+2: [ 90, 674 ]
+Level: 1, Number of Keys: 5
+0: [ 92, 729 ]
+1: [ 7, 511 ]
+2: [ 62, 700 ]
+3: [ 42, 530 ]
+4: [ 17, 642 ]
+Level: 3, Number of Keys: 3
+0: [ 89, 80 ]
+1: [ 84, 699 ]
+2: [ 99, 477 ]
+Level: 4, Number of Keys: 2
+0: [ 69, 737 ]
+1: [ 64, 627 ]
+Level: 5, Number of Keys: 2
+0: [ 54, 634 ]
+1: [ 44, 940 ]
+Level: 5, Number of Keys: 5
+0: [ 9, 40 ]
+1: [ 24, 425 ]
+2: [ 19, 843 ]
+3: [ 14, 783 ]
+4: [ 4, 900 ]
+Level: 3, Number of Keys: 2
+0: [ 96, 668 ]
+1: [ 91, 710 ]
+Level: 4, Number of Keys: 1
+0: [ 66, 829 ]
+Level: 5, Number of Keys: 1
+0: [ 56, 857 ]
+Level: 5, Number of Keys: 5
+0: [ 36, 875 ]
+1: [ 11, 745 ]
+2: [ 6, 928 ]
+3: [ 21, 810 ]
+4: [ 1, 817 ]
+Level: 3, Number of Keys: 1
+0: [ 78, 576 ]
+Level: 3, Number of Keys: 5
+0: [ 63, 396 ]
+1: [ 73, 514 ]
+2: [ 38, 660 ]
+3: [ 28, 235 ]
+4: [ 48, 989 ]
+Deepest level: 6
+Number of steps taken: 6786
+Number of nodes: 32
+
+====================================================
+
+1.b)
+====
+
+
+Enter maximum range: 
+Number of operations: 
+Enter seed: 
+Enter print option (0 for no keys, 1 for keys): 
+
+Printing after: 100000 operations.
+Level: 5, Number of Keys: 5
+0: [ 5, 99542 ]
+1: [ 20, 99837 ]
+2: [ 30, 99856 ]
+3: [ 40, 99704 ]
+4: [ 35, 99983 ]
+Level: 5, Number of Keys: 1
+0: [ 45, 99835 ]
+Level: 0, Number of Keys: 1
+0: [ 80, 99034 ]
+Level: 0, Number of Keys: 2
+0: [ 87, 99718 ]
+1: [ 97, 99916 ]
+Level: 4, Number of Keys: 3
+0: [ 72, 99559 ]
+1: [ 77, 99613 ]
+2: [ 67, 99756 ]
+Level: 5, Number of Keys: 2
+0: [ 57, 99516 ]
+1: [ 52, 99884 ]
+Level: 5, Number of Keys: 5
+0: [ 17, 99899 ]
+1: [ 42, 99667 ]
+2: [ 32, 99230 ]
+3: [ 7, 98976 ]
+4: [ 27, 99996 ]
+Level: 0, Number of Keys: 4
+0: [ 94, 98571 ]
+1: [ 79, 99700 ]
+2: [ 99, 99894 ]
+3: [ 84, 99974 ]
+Level: 3, Number of Keys: 5
+0: [ 59, 99912 ]
+1: [ 29, 99792 ]
+2: [ 49, 99712 ]
+3: [ 69, 99951 ]
+4: [ 9, 99987 ]
+Level: 3, Number of Keys: 2
+0: [ 86, 99786 ]
+1: [ 91, 99917 ]
+Level: 4, Number of Keys: 3
+0: [ 66, 99746 ]
+1: [ 71, 99332 ]
+2: [ 61, 99985 ]
+Level: 4, Number of Keys: 5
+0: [ 26, 99346 ]
+1: [ 21, 99892 ]
+2: [ 1, 99502 ]
+3: [ 16, 99845 ]
+4: [ 11, 99989 ]
+Level: 3, Number of Keys: 3
+0: [ 83, 99988 ]
+1: [ 88, 99126 ]
+2: [ 98, 99931 ]
+Level: 4, Number of Keys: 2
+0: [ 73, 99413 ]
+1: [ 68, 99369 ]
+Level: 5, Number of Keys: 1
+0: [ 53, 99586 ]
+Level: 6, Number of Keys: 1
+0: [ 33, 99067 ]
+Level: 6, Number of Keys: 5
+0: [ 18, 99866 ]
+1: [ 8, 99373 ]
+2: [ 23, 99541 ]
+3: [ 28, 99608 ]
+4: [ 13, 99887 ]
+Deepest level: 6
+Number of steps taken: 753509
+Number of nodes: 36
+
+Printing after: 200000 operations.
+Level: 4, Number of Keys: 4
+0: [ 25, 198703 ]
+1: [ 15, 199813 ]
+2: [ 5, 199892 ]
+3: [ 20, 199778 ]
+Level: 4, Number of Keys: 2
+0: [ 60, 198436 ]
+1: [ 70, 199191 ]
+Level: 3, Number of Keys: 3
+0: [ 100, 198728 ]
+1: [ 90, 199463 ]
+2: [ 95, 199744 ]
+Level: 3, Number of Keys: 2
+0: [ 97, 199904 ]
+1: [ 82, 199900 ]
+Level: 4, Number of Keys: 3
+0: [ 77, 199726 ]
+1: [ 67, 199599 ]
+2: [ 62, 199988 ]
+Level: 4, Number of Keys: 3
+0: [ 22, 199541 ]
+1: [ 12, 199866 ]
+2: [ 42, 199996 ]
+Level: 3, Number of Keys: 3
+0: [ 84, 199810 ]
+1: [ 99, 199381 ]
+2: [ 94, 199548 ]
+Level: 3, Number of Keys: 5
+0: [ 74, 199755 ]
+1: [ 59, 199871 ]
+2: [ 49, 199525 ]
+3: [ 24, 199966 ]
+4: [ 54, 199973 ]
+Level: 0, Number of Keys: 3
+0: [ 96, 199458 ]
+1: [ 81, 199862 ]
+2: [ 91, 199590 ]
+Level: 4, Number of Keys: 2
+0: [ 71, 197011 ]
+1: [ 66, 198992 ]
+Level: 5, Number of Keys: 3
+0: [ 51, 199181 ]
+1: [ 46, 199470 ]
+2: [ 56, 199885 ]
+Level: 5, Number of Keys: 5
+0: [ 41, 199624 ]
+1: [ 36, 199971 ]
+2: [ 26, 199967 ]
+3: [ 11, 199975 ]
+4: [ 16, 199841 ]
+Level: 3, Number of Keys: 2
+0: [ 78, 199460 ]
+1: [ 93, 199916 ]
+Level: 3, Number of Keys: 5
+0: [ 68, 199894 ]
+1: [ 53, 199384 ]
+2: [ 33, 199788 ]
+3: [ 23, 199592 ]
+4: [ 3, 199962 ]
+Deepest level: 6
+Number of steps taken: 1505595
+Number of nodes: 29
+
+Printing after: 300000 operations.
+Level: 5, Number of Keys: 5
+0: [ 5, 299786 ]
+1: [ 20, 299954 ]
+2: [ 30, 299398 ]
+3: [ 35, 299343 ]
+4: [ 40, 299583 ]
+Level: 0, Number of Keys: 2
+0: [ 55, 299919 ]
+1: [ 50, 299886 ]
+Level: 4, Number of Keys: 2
+0: [ 70, 299514 ]
+1: [ 75, 299863 ]
+Level: 0, Number of Keys: 3
+0: [ 85, 299732 ]
+1: [ 80, 299640 ]
+2: [ 95, 299990 ]
+Level: 0, Number of Keys: 3
+0: [ 97, 299554 ]
+1: [ 87, 299478 ]
+2: [ 82, 299813 ]
+Level: 4, Number of Keys: 2
+0: [ 62, 299926 ]
+1: [ 67, 299932 ]
+Level: 4, Number of Keys: 5
+0: [ 17, 299391 ]
+1: [ 47, 299868 ]
+2: [ 22, 299731 ]
+3: [ 12, 298056 ]
+4: [ 42, 299968 ]
+Level: 0, Number of Keys: 1
+0: [ 94, 299930 ]
+Level: 4, Number of Keys: 2
+0: [ 59, 299221 ]
+1: [ 64, 298861 ]
+Level: 5, Number of Keys: 3
+0: [ 44, 299420 ]
+1: [ 54, 299538 ]
+2: [ 49, 299779 ]
+Level: 5, Number of Keys: 5
+0: [ 34, 299045 ]
+1: [ 19, 299341 ]
+2: [ 14, 299588 ]
+3: [ 24, 299639 ]
+4: [ 29, 299881 ]
+Level: 3, Number of Keys: 4
+0: [ 81, 298859 ]
+1: [ 86, 299872 ]
+2: [ 96, 299888 ]
+3: [ 91, 299969 ]
+Level: 3, Number of Keys: 4
+0: [ 36, 298969 ]
+1: [ 46, 299542 ]
+2: [ 11, 299948 ]
+3: [ 51, 299758 ]
+Level: 3, Number of Keys: 3
+0: [ 98, 299135 ]
+1: [ 83, 299621 ]
+2: [ 78, 299985 ]
+Level: 4, Number of Keys: 2
+0: [ 63, 298509 ]
+1: [ 58, 299409 ]
+Level: 5, Number of Keys: 2
+0: [ 48, 299735 ]
+1: [ 53, 299971 ]
+Level: 5, Number of Keys: 4
+0: [ 28, 299064 ]
+1: [ 13, 299491 ]
+2: [ 8, 299879 ]
+3: [ 33, 299880 ]
+Deepest level: 6
+Number of steps taken: 2256688
+Number of nodes: 35
+
+Printing after: 400000 operations.
+Level: 4, Number of Keys: 4
+0: [ 35, 399569 ]
+1: [ 50, 399651 ]
+2: [ 40, 399703 ]
+3: [ 55, 399951 ]
+Level: 4, Number of Keys: 3
+0: [ 60, 399510 ]
+1: [ 65, 399394 ]
+2: [ 70, 399844 ]
+Level: 0, Number of Keys: 4
+0: [ 95, 399869 ]
+1: [ 85, 399879 ]
+2: [ 90, 399916 ]
+3: [ 80, 399945 ]
+Level: 3, Number of Keys: 2
+0: [ 92, 399292 ]
+1: [ 97, 399544 ]
+Level: 4, Number of Keys: 2
+0: [ 67, 399461 ]
+1: [ 77, 399857 ]
+Level: 4, Number of Keys: 5
+0: [ 27, 399855 ]
+1: [ 2, 399659 ]
+2: [ 17, 399921 ]
+3: [ 37, 399850 ]
+4: [ 42, 399989 ]
+Level: 3, Number of Keys: 2
+0: [ 84, 399417 ]
+1: [ 94, 398879 ]
+Level: 4, Number of Keys: 2
+0: [ 69, 399478 ]
+1: [ 64, 399872 ]
+Level: 4, Number of Keys: 5
+0: [ 49, 399592 ]
+1: [ 54, 399754 ]
+2: [ 44, 399890 ]
+3: [ 24, 398869 ]
+4: [ 29, 398865 ]
+Level: 0, Number of Keys: 2
+0: [ 91, 399722 ]
+1: [ 81, 399816 ]
+Level: 4, Number of Keys: 2
+0: [ 61, 398508 ]
+1: [ 76, 399740 ]
+Level: 5, Number of Keys: 2
+0: [ 56, 399649 ]
+1: [ 51, 399972 ]
+Level: 5, Number of Keys: 4
+0: [ 31, 399746 ]
+1: [ 1, 398861 ]
+2: [ 11, 399919 ]
+3: [ 41, 399993 ]
+Level: 0, Number of Keys: 1
+0: [ 83, 399870 ]
+Level: 5, Number of Keys: 2
+0: [ 53, 399780 ]
+1: [ 43, 399439 ]
+Level: 5, Number of Keys: 5
+0: [ 38, 399182 ]
+1: [ 33, 399501 ]
+2: [ 13, 399351 ]
+3: [ 8, 399614 ]
+4: [ 23, 399847 ]
+Deepest level: 6
+Number of steps taken: 3006109
+Number of nodes: 34
+
+Printing after: 500000 operations.
+Level: 6, Number of Keys: 5
+0: [ 25, 499188 ]
+1: [ 15, 498622 ]
+2: [ 20, 499477 ]
+3: [ 30, 499762 ]
+4: [ 10, 499952 ]
+Level: 6, Number of Keys: 2
+0: [ 35, 498916 ]
+1: [ 40, 499974 ]
+Level: 0, Number of Keys: 1
+0: [ 50, 499976 ]
+Level: 4, Number of Keys: 2
+0: [ 70, 499681 ]
+1: [ 65, 499938 ]
+Level: 0, Number of Keys: 2
+0: [ 95, 499395 ]
+1: [ 100, 499977 ]
+Level: 4, Number of Keys: 3
+0: [ 77, 499558 ]
+1: [ 67, 499823 ]
+2: [ 62, 499987 ]
+Level: 5, Number of Keys: 2
+0: [ 52, 499231 ]
+1: [ 47, 499969 ]
+Level: 6, Number of Keys: 2
+0: [ 42, 499866 ]
+1: [ 37, 499936 ]
+Level: 6, Number of Keys: 5
+0: [ 17, 499862 ]
+1: [ 2, 499745 ]
+2: [ 7, 499679 ]
+3: [ 12, 499997 ]
+4: [ 27, 499998 ]
+Level: 3, Number of Keys: 3
+0: [ 94, 499583 ]
+1: [ 99, 499158 ]
+2: [ 84, 499949 ]
+Level: 0, Number of Keys: 1
+0: [ 59, 499993 ]
+Level: 4, Number of Keys: 5
+0: [ 29, 499336 ]
+1: [ 9, 498954 ]
+2: [ 24, 499732 ]
+3: [ 14, 499749 ]
+4: [ 4, 499850 ]
+Level: 4, Number of Keys: 3
+0: [ 61, 499246 ]
+1: [ 66, 499531 ]
+2: [ 76, 499472 ]
+Level: 0, Number of Keys: 1
+0: [ 56, 499783 ]
+Level: 6, Number of Keys: 2
+0: [ 41, 499703 ]
+1: [ 36, 499883 ]
+Level: 6, Number of Keys: 5
+0: [ 21, 499081 ]
+1: [ 26, 499501 ]
+2: [ 16, 499529 ]
+3: [ 6, 499661 ]
+4: [ 31, 499939 ]
+Level: 0, Number of Keys: 1
+0: [ 98, 499853 ]
+Level: 4, Number of Keys: 2
+0: [ 58, 499258 ]
+1: [ 63, 499770 ]
+Level: 4, Number of Keys: 4
+0: [ 33, 499672 ]
+1: [ 13, 499760 ]
+2: [ 23, 498810 ]
+3: [ 28, 499983 ]
+Deepest level: 6
+Number of steps taken: 3753725
+Number of nodes: 41
+
+Printing after: 600000 operations.
+Level: 5, Number of Keys: 4
+0: [ 15, 599392 ]
+1: [ 35, 599792 ]
+2: [ 10, 599810 ]
+3: [ 20, 599977 ]
+Level: 5, Number of Keys: 3
+0: [ 45, 599197 ]
+1: [ 50, 599599 ]
+2: [ 55, 599694 ]
+Level: 4, Number of Keys: 3
+0: [ 70, 599149 ]
+1: [ 65, 599650 ]
+2: [ 60, 599521 ]
+Level: 0, Number of Keys: 4
+0: [ 85, 599803 ]
+1: [ 100, 599972 ]
+2: [ 80, 599989 ]
+3: [ 90, 599994 ]
+Level: 0, Number of Keys: 3
+0: [ 97, 599748 ]
+1: [ 92, 599847 ]
+2: [ 82, 599870 ]
+Level: 0, Number of Keys: 3
+0: [ 67, 598501 ]
+1: [ 72, 598994 ]
+2: [ 77, 599162 ]
+Level: 4, Number of Keys: 3
+0: [ 57, 599335 ]
+1: [ 2, 599791 ]
+2: [ 12, 598894 ]
+Level: 0, Number of Keys: 4
+0: [ 99, 599724 ]
+1: [ 79, 599811 ]
+2: [ 89, 599873 ]
+3: [ 84, 599980 ]
+Level: 0, Number of Keys: 2
+0: [ 69, 599370 ]
+1: [ 64, 599820 ]
+Level: 5, Number of Keys: 2
+0: [ 44, 599519 ]
+1: [ 54, 599931 ]
+Level: 5, Number of Keys: 4
+0: [ 34, 599484 ]
+1: [ 39, 599751 ]
+2: [ 29, 599747 ]
+3: [ 19, 599298 ]
+Level: 0, Number of Keys: 3
+0: [ 81, 598816 ]
+1: [ 91, 599793 ]
+2: [ 86, 599913 ]
+Level: 4, Number of Keys: 1
+0: [ 61, 599028 ]
+Level: 5, Number of Keys: 2
+0: [ 51, 599595 ]
+1: [ 46, 599782 ]
+Level: 5, Number of Keys: 4
+0: [ 31, 599906 ]
+1: [ 11, 599815 ]
+2: [ 21, 599840 ]
+3: [ 6, 599790 ]
+Level: 0, Number of Keys: 2
+0: [ 88, 599590 ]
+1: [ 98, 599563 ]
+Level: 4, Number of Keys: 4
+0: [ 68, 599740 ]
+1: [ 63, 599777 ]
+2: [ 58, 599949 ]
+3: [ 73, 599966 ]
+Level: 5, Number of Keys: 3
+0: [ 43, 599437 ]
+1: [ 53, 599804 ]
+2: [ 48, 599954 ]
+Level: 5, Number of Keys: 5
+0: [ 13, 599585 ]
+1: [ 38, 599491 ]
+2: [ 18, 598890 ]
+3: [ 3, 599899 ]
+4: [ 23, 599969 ]
+Deepest level: 6
+Number of steps taken: 4504602
+Number of nodes: 39
+
+Printing after: 700000 operations.
+Level: 3, Number of Keys: 5
+0: [ 35, 699623 ]
+1: [ 25, 699110 ]
+2: [ 5, 699869 ]
+3: [ 45, 699401 ]
+4: [ 65, 699842 ]
+Level: 3, Number of Keys: 1
+0: [ 80, 699787 ]
+Level: 3, Number of Keys: 3
+0: [ 82, 699516 ]
+1: [ 92, 699845 ]
+2: [ 97, 699889 ]
+Level: 4, Number of Keys: 2
+0: [ 67, 699065 ]
+1: [ 62, 699975 ]
+Level: 4, Number of Keys: 5
+0: [ 12, 699937 ]
+1: [ 7, 699208 ]
+2: [ 57, 699794 ]
+3: [ 42, 699909 ]
+4: [ 37, 699967 ]
+Level: 3, Number of Keys: 3
+0: [ 84, 699421 ]
+1: [ 89, 699674 ]
+2: [ 79, 699691 ]
+Level: 3, Number of Keys: 5
+0: [ 74, 699746 ]
+1: [ 69, 699672 ]
+2: [ 49, 699545 ]
+3: [ 54, 699715 ]
+4: [ 34, 699751 ]
+Level: 4, Number of Keys: 1
+0: [ 76, 699928 ]
+Level: 4, Number of Keys: 5
+0: [ 51, 699941 ]
+1: [ 36, 699444 ]
+2: [ 26, 699703 ]
+3: [ 11, 699756 ]
+4: [ 6, 699954 ]
+Level: 3, Number of Keys: 3
+0: [ 78, 699532 ]
+1: [ 98, 699934 ]
+2: [ 83, 699965 ]
+Level: 4, Number of Keys: 2
+0: [ 58, 699650 ]
+1: [ 63, 699726 ]
+Level: 5, Number of Keys: 1
+0: [ 43, 698353 ]
+Level: 6, Number of Keys: 2
+0: [ 38, 699334 ]
+1: [ 33, 699894 ]
+Level: 6, Number of Keys: 4
+0: [ 3, 699483 ]
+1: [ 8, 699727 ]
+2: [ 18, 699826 ]
+3: [ 13, 699877 ]
+Deepest level: 6
+Number of steps taken: 5253276
+Number of nodes: 30
+
+Printing after: 800000 operations.
+Level: 6, Number of Keys: 5
+0: [ 25, 799717 ]
+1: [ 5, 799854 ]
+2: [ 30, 799512 ]
+3: [ 10, 799928 ]
+4: [ 20, 799987 ]
+Level: 6, Number of Keys: 1
+0: [ 35, 799609 ]
+Level: 4, Number of Keys: 4
+0: [ 75, 799120 ]
+1: [ 60, 799543 ]
+2: [ 65, 799767 ]
+3: [ 70, 799816 ]
+Level: 3, Number of Keys: 2
+0: [ 90, 799949 ]
+1: [ 100, 799421 ]
+Level: 3, Number of Keys: 2
+0: [ 92, 799387 ]
+1: [ 97, 799782 ]
+Level: 3, Number of Keys: 5
+0: [ 17, 799836 ]
+1: [ 57, 799754 ]
+2: [ 47, 799806 ]
+3: [ 32, 799498 ]
+4: [ 12, 799996 ]
+Level: 0, Number of Keys: 2
+0: [ 99, 799714 ]
+1: [ 79, 799640 ]
+Level: 4, Number of Keys: 1
+0: [ 74, 799824 ]
+Level: 4, Number of Keys: 5
+0: [ 44, 798627 ]
+1: [ 54, 799019 ]
+2: [ 34, 799698 ]
+3: [ 29, 799199 ]
+4: [ 49, 799971 ]
+Level: 0, Number of Keys: 1
+0: [ 81, 799863 ]
+Level: 4, Number of Keys: 3
+0: [ 76, 799148 ]
+1: [ 66, 799648 ]
+2: [ 71, 799894 ]
+Level: 5, Number of Keys: 2
+0: [ 46, 799704 ]
+1: [ 56, 799550 ]
+Level: 5, Number of Keys: 4
+0: [ 41, 799716 ]
+1: [ 21, 799735 ]
+2: [ 16, 799884 ]
+3: [ 26, 799475 ]
+Level: 0, Number of Keys: 3
+0: [ 93, 799744 ]
+1: [ 88, 799827 ]
+2: [ 83, 799941 ]
+Level: 4, Number of Keys: 3
+0: [ 73, 799425 ]
+1: [ 63, 799708 ]
+2: [ 58, 799877 ]
+Level: 5, Number of Keys: 1
+0: [ 43, 799485 ]
+Level: 5, Number of Keys: 5
+0: [ 38, 799048 ]
+1: [ 3, 799596 ]
+2: [ 8, 799605 ]
+3: [ 33, 799812 ]
+4: [ 23, 799903 ]
+Deepest level: 6
+Number of steps taken: 6002060
+Number of nodes: 36
+
+Printing after: 900000 operations.
+Level: 4, Number of Keys: 5
+0: [ 30, 898964 ]
+1: [ 5, 899854 ]
+2: [ 40, 899757 ]
+3: [ 50, 897358 ]
+4: [ 45, 899670 ]
+Level: 4, Number of Keys: 3
+0: [ 60, 899507 ]
+1: [ 75, 899790 ]
+2: [ 70, 899939 ]
+Level: 3, Number of Keys: 1
+0: [ 100, 899452 ]
+Level: 0, Number of Keys: 2
+0: [ 92, 899666 ]
+1: [ 97, 899721 ]
+Level: 0, Number of Keys: 2
+0: [ 62, 899531 ]
+1: [ 72, 899971 ]
+Level: 5, Number of Keys: 1
+0: [ 57, 899511 ]
+Level: 5, Number of Keys: 5
+0: [ 42, 899820 ]
+1: [ 7, 899781 ]
+2: [ 17, 899801 ]
+3: [ 27, 899028 ]
+4: [ 2, 899608 ]
+Level: 3, Number of Keys: 4
+0: [ 84, 899769 ]
+1: [ 89, 898943 ]
+2: [ 79, 899672 ]
+3: [ 94, 899949 ]
+Level: 4, Number of Keys: 3
+0: [ 74, 898997 ]
+1: [ 64, 899437 ]
+2: [ 59, 899842 ]
+Level: 5, Number of Keys: 2
+0: [ 54, 899718 ]
+1: [ 49, 899772 ]
+Level: 5, Number of Keys: 5
+0: [ 39, 898980 ]
+1: [ 34, 899312 ]
+2: [ 4, 899287 ]
+3: [ 19, 899903 ]
+4: [ 9, 899951 ]
+Level: 3, Number of Keys: 3
+0: [ 86, 899959 ]
+1: [ 91, 899539 ]
+2: [ 96, 899916 ]
+Level: 4, Number of Keys: 3
+0: [ 66, 899780 ]
+1: [ 71, 899956 ]
+2: [ 76, 899925 ]
+Level: 4, Number of Keys: 5
+0: [ 46, 899395 ]
+1: [ 51, 899360 ]
+2: [ 6, 899553 ]
+3: [ 41, 899766 ]
+4: [ 16, 899977 ]
+Level: 3, Number of Keys: 1
+0: [ 93, 899798 ]
+Level: 3, Number of Keys: 5
+0: [ 68, 899555 ]
+1: [ 28, 899712 ]
+2: [ 48, 899242 ]
+3: [ 23, 899815 ]
+4: [ 3, 899805 ]
+Deepest level: 6
+Number of steps taken: 6752569
+Number of nodes: 33
+
+Printing after: 1000000 operations.
+Level: 5, Number of Keys: 5
+0: [ 15, 998818 ]
+1: [ 20, 999616 ]
+2: [ 30, 999707 ]
+3: [ 5, 999856 ]
+4: [ 10, 999877 ]
+Level: 5, Number of Keys: 2
+0: [ 55, 999113 ]
+1: [ 50, 999785 ]
+Level: 4, Number of Keys: 4
+0: [ 60, 999745 ]
+1: [ 65, 999879 ]
+2: [ 70, 999925 ]
+3: [ 75, 999992 ]
+Level: 3, Number of Keys: 3
+0: [ 90, 999011 ]
+1: [ 80, 999840 ]
+2: [ 100, 999908 ]
+Level: 3, Number of Keys: 2
+0: [ 97, 999360 ]
+1: [ 82, 999931 ]
+Level: 4, Number of Keys: 2
+0: [ 67, 999740 ]
+1: [ 62, 999823 ]
+Level: 0, Number of Keys: 1
+0: [ 57, 999989 ]
+Level: 6, Number of Keys: 2
+0: [ 37, 999665 ]
+1: [ 42, 999947 ]
+Level: 6, Number of Keys: 4
+0: [ 32, 999197 ]
+1: [ 2, 999056 ]
+2: [ 12, 999948 ]
+3: [ 7, 999979 ]
+Level: 0, Number of Keys: 2
+0: [ 79, 999917 ]
+1: [ 99, 999938 ]
+Level: 0, Number of Keys: 1
+0: [ 64, 999907 ]
+Level: 5, Number of Keys: 2
+0: [ 54, 998137 ]
+1: [ 44, 999903 ]
+Level: 5, Number of Keys: 4
+0: [ 4, 999746 ]
+1: [ 29, 999685 ]
+2: [ 24, 999829 ]
+3: [ 9, 999865 ]
+Level: 0, Number of Keys: 2
+0: [ 86, 999811 ]
+1: [ 96, 999899 ]
+Level: 4, Number of Keys: 3
+0: [ 66, 999782 ]
+1: [ 76, 999511 ]
+2: [ 61, 999898 ]
+Level: 5, Number of Keys: 1
+0: [ 51, 999214 ]
+Level: 5, Number of Keys: 5
+0: [ 11, 999439 ]
+1: [ 1, 999849 ]
+2: [ 21, 999044 ]
+3: [ 31, 999821 ]
+4: [ 36, 999966 ]
+Level: 0, Number of Keys: 3
+0: [ 93, 999618 ]
+1: [ 98, 999910 ]
+2: [ 88, 999977 ]
+Level: 4, Number of Keys: 3
+0: [ 63, 999308 ]
+1: [ 68, 999593 ]
+2: [ 73, 999602 ]
+Level: 4, Number of Keys: 5
+0: [ 53, 999606 ]
+1: [ 48, 999988 ]
+2: [ 33, 999921 ]
+3: [ 23, 999820 ]
+4: [ 3, 999762 ]
+Deepest level: 6
+Number of steps taken: 7500615
+Number of nodes: 41
+
+=========================================
+
+1.c)
+====
+
+
+Enter maximum range: 
+Number of operations: 
+Enter seed: 
+Enter print option (0 for no keys, 1 for keys): 
+
+Printing after: 100000 operations.
+Deepest level: 5
+Number of steps taken: 761580
+Number of nodes: 2763
+
+Printing after: 200000 operations.
+Deepest level: 0
+Number of steps taken: 1523947
+Number of nodes: 2788
+
+Printing after: 300000 operations.
+Deepest level: 5
+Number of steps taken: 2284432
+Number of nodes: 2723
+
+Printing after: 400000 operations.
+Deepest level: 0
+Number of steps taken: 3044467
+Number of nodes: 2757
+
+Printing after: 500000 operations.
+Deepest level: 0
+Number of steps taken: 3805173
+Number of nodes: 2732
+
+Printing after: 600000 operations.
+Deepest level: 0
+Number of steps taken: 4566487
+Number of nodes: 2786
+
+Printing after: 700000 operations.
+Deepest level: 0
+Number of steps taken: 5326796
+Number of nodes: 2745
+
+Printing after: 800000 operations.
+Deepest level: 0
+Number of steps taken: 6087088
+Number of nodes: 2768
+
+Printing after: 900000 operations.
+Deepest level: 5
+Number of steps taken: 6847647
+Number of nodes: 2782
+
+Printing after: 1000000 operations.
+Deepest level: 0
+Number of steps taken: 7607650
+Number of nodes: 2814
+
+=========================================
+
+1.d)
+====
+
+Enter maximum range: 
+Number of operations: 
+Enter seed: 
+Enter print option (0 for no keys, 1 for keys): 
+
+Printing after: 1000000 operations.
+Deepest level: 6
+Number of steps taken: 8871431
+Number of nodes: 25140
+
+Printing after: 2000000 operations.
+Deepest level: 7
+Number of steps taken: 17770533
+Number of nodes: 24908
+
+Printing after: 3000000 operations.
+Deepest level: 0
+Number of steps taken: 26668675
+Number of nodes: 24940
+
+Printing after: 4000000 operations.
+Deepest level: 6
+Number of steps taken: 35567366
+Number of nodes: 25078
+
+Printing after: 5000000 operations.
+Deepest level: 7
+Number of steps taken: 44466490
+Number of nodes: 25119
+
+Printing after: 6000000 operations.
+Deepest level: 7
+Number of steps taken: 53368215
+Number of nodes: 25096
+
+Printing after: 7000000 operations.
+Deepest level: 7
+Number of steps taken: 62271473
+Number of nodes: 25059
+
+Printing after: 8000000 operations.
+Deepest level: 0
+Number of steps taken: 71168257
+Number of nodes: 24997
+
+Printing after: 9000000 operations.
+Deepest level: 7
+Number of steps taken: 80070176
+Number of nodes: 25160
+
+Printing after: 10000000 operations.
+Deepest level: 7
+Number of steps taken: 88972507
+Number of nodes: 24862
+
+Enter maximum range: 
+Number of operations: 
+Enter seed: 
+Enter print option (0 for no keys, 1 for keys):
+
+==============================================
+
+2.)
+===
+
+1.d
+---
+
+Seed 1) 7932924 steps
+
+Seed 2) 7294109 steps
+
+Seed 3) 7926387 steps
+
+Seed 4) 7919349 steps
+
+Seed 5) 7928006 steps
+
+Seed 6) 7931327 steps
+
+Seed 7) 7929821 steps
+
+Seed 8) 7925223 steps
+
+Seed 9) 7932911 steps
+
+Seed 10) 7922018 steps
+
+
+Average Steps: 7864207.5 steps
+
+1.e
+---
+
+Seed 1) 92503886 steps
+
+Seed 2) 92498506 steps
+
+Seed 3) 92485148 steps
+
+Seed 4) 92487808 steps
+
+Seed 5) 92520368 steps
+
+Seed 6) 92507549 steps
+
+Seed 7) 92479803 steps
+
+Seed 8) 92502044 steps
+
+Seed 9) 92498620 steps
+
+Seed 10) 92484637 steps
+
+Average Steps: 92496836.9

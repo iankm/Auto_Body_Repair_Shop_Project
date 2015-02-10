@@ -1,0 +1,668 @@
+=====================
+|    Design.txt     |
+=====================
+
+==============
+|  Overview  |
+==============
+
+In this project, I will attempt to create a Multi-level Hash Tree 
+repository and use it to implement a model of an Auto Repair Shop.
+
+I will have to use my knowledge from all of the past assignments,
+including memory allocation, repository construction, inheritance,
+and polymorphism. 
+
+The harder part will be Part 1. Part 2 is more creative, but
+will take long considering the number of menus that need to be
+written.
+
+I will need to think of ways to clean up how I write the code.
+It will get messy considering all the methods I will need to 
+buffer the already necessary methods described in the assignment.
+
+
+
+PART 1
+======
+
+NECESSARY CLASSES:
+-----------------
+
+1. NODE TEMPLATE CLASS (Node<T>)
+2. TREE TEMPLATE CLASS (TREE<T>)
+
+Two seperate header files, Node.h and Tree.h
+Both are templates. Follow examples from class.
+
+::::::::::
+: TREE.H :
+::::::::::
+
+NECESSARY METHODS:
+==================
+
+
+1. MLH_Insert:
+==============
+
+    - Receives a key and object and inserts the object into the repository
+    if an object with that key does not exist already.
+
+    - Since the key is being inserted into the tree, have insert in Tree.h.
+    
+    - Will return 1 if successful, 0 if not.
+
+    - Increments num_keys whenever a key is inserted. (see increment_num_keys)
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+
+    - Creating the Get method first will make insert easier.
+    - Recall older projects. Use those as models.
+    - What is different:
+        + Nodes. Must check the existence and capacity of nodes.
+            > Checking if the nodes are stems, if they are full, will help.
+    
+    Four Possibilities for the node:
+    --------------------------------
+
+        - It exists and it is a stem.
+            + In this case, hash the key to the next level. Returns 1-5, so subtract 1 and store as INDEX 
+            + Keep the current node as "previous." It needs to be set as its children's parent.
+            + Call insert on the current node's child at the given index. (MLH_Insert with children[INDEX])
+        - It exists and is full:
+            + In this case, the node must be exploded. Need an explode class. (Code is too big to all be in insert)
+            + Exploding is explained in Node class.
+        - It does not exist:
+            + In this case, create a new node. Assign it the key and data. Need to give it a parent.
+            + To decide which of the parent's indexes it will be assigned to, hash the key on the current level.
+            + It's parent pointer will be the most recent node assigned to "previous."
+        - It exists and is not full:
+            + In this case, assign the key and data to the first open spots in the respective arrays.
+        - All cases return 1.
+        - Otherwise:
+            + Return 0.
+
+    NEW METHOD: node_insert
+    -----------------------
+
+    This will do exactly what is described above. Instead, MLH_Insert will just call node_insert.
+    MLH_Insert will be used in the driver program by the user. It will only receive a key and data.
+    It will then pass the private variable "root" and level "0" to node_insert.
+
+
+2. MLH_Delete:
+==============
+
+    - Receives a key and removes the corresponding object from the repository if it exists.
+   
+    - Since insert is in Tree.h, this will be as well.
+
+    - Returns the data pointer if successful, NULL if not.
+    (This makes sure that the data is deleted when found.)
+
+    - Decrements num_keys whenever a key is deleted. (see decrement_num_keys)
+    
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+    
+    - Creating the Get and Insert methods first will make testing delete easier.
+    - Again, use the older projects.
+    - What is different:
+        + Nodes.
+
+    Two Possibilites for the node:
+    ------------------------------
+    
+        - It exists and it is a stem.
+            + In this case, it works like insert, except that it will call MLH_Delete and will not keep track
+                of the previous pointer.
+        - It exists and is not a stem.
+            + Search for the key. If the key exists, set key to 0 and data to NULL (if deleted, will cause double free).
+                > There will be holes in the array when these are removed. Set them to the spot that is equal to 
+                    "num_keys - 1" ... This is the last open spot in the array.
+                > If, after the key is removed, the node's parent is only responsible for 5 keys, collect the parent's
+                children.
+                > If, after the key is removed, the node does not contain any keys, delete the node.
+        - All cases return the data pointer.
+        -Otherwise:
+            + Return NULL.
+
+    NEW METHOD: node_delete
+    -----------------------
+
+    This will do exactly what is described above. Instead, MLH_Delete will just call node_delete.
+    MLH_Delete will be used in the driver program by the user. It will only receive a key.
+    It will then pass the private variable "root" and level "0" to node_delete.
+
+
+3. MLH_Get:
+===========
+
+    - Receives a key and returns the appropriate object from the repository if it exists.
+
+    - Like the other methods, this will be in Tree.h
+
+    - Returns the data pointer if successful, NULL otherwise.
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+
+    - This will work just like the previous Get methods:
+        + Traverse through the repository. If there is no matching key, then get is unsuccessful.
+    - The only difference:
+        + Nodes.
+
+    Two Possibilities for the node:
+    -------------------------------
+
+        - It exists and it is a stem:
+            + Works like the previously mentioned methods in that it calls itself.
+        - It exists and is not a stem.
+            + Search for the key. If the key exists, return its data.
+        - Returns data pointer.
+        - Otherwise:
+            + Return NULL.
+
+    NEW METHOD: node_get
+    --------------------
+
+    This will do exactly what is described above. Instead, MLH_Get will just call node_get.
+    MLH_Get will be used in the driver program by the user. It will only receive a key.
+    It will then pass the private variable "root" and level "0" to node_delete.
+
+
+4. <<:
+======
+
+    - Prints the number of objects in the repository, the current number of levels of 
+    the deepest multi-level hash node, and the number of hash nodes in the repository.
+
+    - As an option, this operation will print all the keys in the repository and the object
+    associated with each key. Such an option should be implemented using an MLH_set_print_option
+    operation after which the option is set until further MLH_set_print_option calls.
+
+    - This needs a helper method, MLH_set_print_option! That is easy to implement.
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+
+    - Follow the examples from class. Friend the function.
+    - Must include iostream.
+    - Make calls to the nodes keys and data (n->key and n->data)
+    - Have another method that traverses through the array and prints each node. (Another helper method!)
+        + This will have to be in the node class. Utilize Rob's "smart node" advice.
+    - Number of objects will be num_keys in the root node.
+    - Deepest level hash node will be hard... Keep track of the lowest node.
+    - Number of nodes will be num_nodes, incremeneted and decremented whenever a node 
+    is new'd or deleted, respectively.
+
+
+5. destroy_tree:
+================
+
+    - Although this was never explicitly required, it is important to have a method that deletes
+    the nodes and data in the tree. It would be hard to implement it all from the destructor.
+
+    -This function traverses through the tree and deallocates all data and nodes inside.
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+
+    - Start at root.
+    - Have it call itself recursively on all of the root's children.
+    - Thus, we have two possibilities:
+        + The node is a stem:
+            > In this case, we make the recursive call.
+        + The node is not a stem:
+            > In this case, we traverse through the data array of the node and delete all pointers.
+            > Just as a band-aid, NULLify the data.
+    - After deleting all data, delete the node itself.
+
+
+HELPER METHODS:
+===============
+
+
+MLH_set_print_option:
+=====================
+
+    - This is simple. It will take a value in and set print_option to that value.
+    - print_option is the variable name within tree.
+    - 1 will print keys, 0 will not print keys.
+
+
+print_tree:
+===========
+
+    - Calls the print_nodes function from the node class.
+    - prints the tree with <<.
+    
+    -The only way I could think to effectively increment max_level is to change it in print_tree.
+     max_level will be passed from print_tree to print_nodes. The process will be described in
+     the description of print nodes.
+
+in/decrement_num_keys:
+======================
+(2 separate methods)
+
+    - These methods will be passed a node parameter. The functions will then traverse up the tree, beginning
+    with the node specified (which will always be the bottom-most node unless changed). 
+    - increment_num_keys will increase the num_keys counter of each node by 1.
+    - decrement_num_keys will decrease the num_keys counter of each node by 1.
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ---------------------------
+   
+    - Use a while loop.
+    - Assign parent pointers to every node.
+    - Traverse until parent is NULL. (This will only occur when the child is "root")
+
+VARIABLES:
+==========
+
+Looking at the given methods, it is clear that we will need the following variables:
+
+- An integer, max_level. Initialized to zero.
+- An integer, num_steps. Initialized to zero.
+- An integer, print_option. Initialized to zero.
+- Another integer, num_nodes. Initialized to zero.
+- A Node pointer, previous. Initialized to NULL.
+- Another Node pointer, root. Initialized with new Node.
+
+
+
+
+::::::::::
+: NODE.H :
+::::::::::
+
+Node.h has methods that aren't explicitly "necessary", but are vital to the proper
+performance of each of the specified necessary methods previously mentioned.
+
+Most notably, we have the explode and collect methods:
+
+explode:
+========
+
+    - When a node is deemed to be "full" when inserting a key, the explode method will be called.
+    - This method will take the keys from a node and hash them into child nodes that will be pointed
+    to by the array of node pointers in the original node.
+    - A loop will traverse the keys of the original node, hash them, and split them up into their
+    determined nodes.
+    - After the 5 keys are sorted, the key-to-be-inserted will be hashed and inserted into its own node.
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+    
+    - Call explode on the node from insert. Use a while loop to go through its keys.
+    - With each key, determine whether the hashed child is existent.
+        + If it is existent, insert the key in the first open spot in the node's array.
+        + If not, create a new node and point it to the parent. Then point the parent's
+        child pointer to it.
+    - Repeat this once more for the key and data pair passed to the explode function.
+    - Check whether or not any of the children nodes need to be exploded again. If so,
+    call explode on that child.
+    - When the new node is created, increment the num_nodes counter.
+    - A specific increment of num_steps (without using the increment_num_steps() method)
+    will update the new child's counter. After the call in explode, the rest of the nodes
+    will be updated.
+
+
+collect:
+========
+
+    - When a parent node is deemed to be "full" (see is_full()) after deleting a key, that 
+    means its children can be dismissed. There is no need to have them since all keys can 
+    fit into the parent.
+    - This method will move the keys from the children back into the parent and delete the children. 
+
+    HOW CAN THIS BE IMPLEMENTED?
+    ----------------------------
+
+    - Call collect on the node from delete. Use a for loop to go through children and
+    another to go through the children's keys.
+    - Keep a counter indicating which index the parent is currently at. Assign the child's
+    key to that index.
+    - Delete the child when done. Decrement num_nodes.
+    - Check to see if, after the nodes are collected, the parent's parent is "full." If
+    it is, call collect on that parent.
+
+
+Other methods include:
+----------------------
+
+<<:
+===
+
+    - Node.h will also overload the << operator. Instead of printing steps and whatnot, it will
+    print out the key and data pairs for each node, as well as the node's level and number of keys.
+
+print_nodes:
+============
+
+    - This method will traverse the whole tree and print all non-stem nodes.
+    - The method is recursive and calls print on a node's children if the node is deemed a stem.
+    - It will also keep track of the lowest node. It will compare each node to the current max_level.
+    If the current max_level is less than the node's level, max_level is incremented. By the time the last child is printed, the max_level should be where the last child is, so I will decrease the max_level if necessary. 
+    - This means I will need to pass print_nodes a pointer to the tree's max_level.
+
+is_empty:
+=========
+
+    - Boolean method that returns true if a node has 0 keys (num_keys == 0).
+    - False otherwise.
+
+
+is_stem:
+========
+
+    - Boolean method that returns true if a node has more than 5 keys (num_keys > 5).
+    - False otherwise.
+
+is_full:
+========
+
+    - Boolean method that returns true if a node has m5 keys (num_keys == 5).
+    - False otherwise.
+
+
+VARIABLES:
+==========
+
+Looking at the Node class, I need the following variables:
+
+An integer array of size 5, keys. All initialized to 0.
+A data array (T*) of size 5, data. All intialized to NULL.
+A Node array (Node<T>*) of size 5, children. All initialized to NULL.
+An integer, level. Initialized to 0.
+An integer, num_keys. Initialized to 0.
+Node<T>* parent. Only root's will be initialized. It will be initialized to NULL in the Tree class.
+
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+PART 2
+======
+
+NECESSARY CLASSES:
+------------------
+
+Main Class: Autorepair (the shop class)
+
+Base Class: Vehicle
+
+Derived Classes: Car, Hybrid, Motorcycle, Bus
+
+Helper Class: Bill
+
+
+
+::::::::::::::::::
+:  Vehicle.cpp   :
+::::::::::::::::::
+
+Vehicle is the most important class. All other classes are derived from it.
+These classes are simple. They pretty much only hold their information, print
+it, and have methods to access their information.
+
+A vehicle has: a bill, an id, a model_year, a color, and mileage.
+
+There will be getters for all info.
+
+The print class will print all this information. It will be VIRTUAL.
+This will allow its derived classes to overload it.
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+:  Car.cpp, Hybrid.cpp, Motorcycle.cpp, Bus.cpp  :
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+These are the derived classes of vehicle. They all hold information that a vehicle would have.
+They also hold their own information, as follows:
+
+Car: enigine_size, gas type, and pollution_level.
+
+Hybrid: (This is actually also a derived class of car) Information for a car. 
+        motor_power, motor_usage, and battery_capacity.
+
+Motorcycle: engine_size, front_wheel_size, back_wheel_size.
+
+Bus: passenger_capacity.
+
+
+::::::::::::::
+:  Bill.cpp  :
+::::::::::::::
+
+The bill class is like the Pricelist class and Cart class from Project 4.
+It actually contains two classes: Task and Bill.
+However, task will only be used within the scope of Bill.
+
+A bill will store the information for:
+
+-The names of tasks.
+-The costs of parts.
+-The costs of labor.
+-revenue
+
+The rest of the Bill class works exactly the list classes demonstrated in lecture.
+Bill contains an initial pointer, first_ptr, and adds tasks to the back of the list.
+
+Each task has a name, a cost of parts, and a cost of labor.
+
+When created, the task will be given a name, cop, and col from each of the arrays in Bill.
+
+Bill will have 3 methods:
+
+insert_task: This will take in an index from the menus. The index will correspond to the
+             task's name, cop, and col in their respective arrays. This makes it easy to
+             access the data. The costs will be added to the bill's revenue variable.
+             The task is then added to the bill's list.
+
+get_revenue: Returns revenue from the tasks in the bill.
+
+print_bill: Traverses the bill's list of tasks and prints their name, cop, and col.
+            A total cost is given (each cop and col are added to a local total_cost integer)
+
+
+Every vehicle has a bill.
+
+
+:::::::::::::::::::::
+:   Autorepair.cpp  :
+:::::::::::::::::::::
+
+This class contains the main method, in which an Autorepair shop is created.
+The menu is also started from the main method.
+
+The shop will have an instance of tree called inventory.
+
+Each menu will be held in a separate method. They are:
+
+print_shop_menu(), print_vehicle_menu(), service_vehicle(), new_task(), check_out_vehicle()
+
+This will have ALL of the menus. Keep them consolidated in one place.
+
+The class will also have the following vairables:
+
+An integer, revenue. This is initalized to 0. The total revenue for the shop that day.
+An integer array of size 5, total_jobs. All integers are initialized to 0. Keeps record
+of all jobs performed that day.
+
+The menus are as follows:
+
+print_shop_menu
+===============
+
+Welcome to Ian's Auto Repair Shop!
+----------------------------------
+
+--------------------------
+What would you like to do?
+--------------------------
+1. Add Vehicle
+2. Service Vehicle
+3. View Services
+4. View a Vehicle (By ID)
+5. View all Vehicles
+6. Check out a Vehicle
+7. View Today's Statistics
+8. New Day
+9. Exit Auto Repair Shop
+
+Make a selection:
+
+
+
+
+Making a selection of 1 will call print_vehicle_menu:
+
+print_vehicle_menu
+==================
+
+Which Vehicle would you like to add?
+
+1. Car
+2. Hybrid
+3. Motorcyle
+4. Bus
+
+Choose vehicle by number:
+
+- Each of these choices will call the corresponding insert method.
+    i.e., Car (choice of 1) will call the insert_car() menthod, etc.
+
+
+
+
+
+Making a selection of 2 in the shop_menu will call service_vehicle:
+
+service_vehicle
+===============
+
+Which car would you like to service?
+Enter vehicle id  number:
+(Checks if id is valid if not, returns to shop_menu)
+
+if so, calls new_task and passes it a vehicle:
+
+What did you come in for?
+-------------------------
+
+1. Scheduled Maintenance
+2. Brake Change
+3. Tune-Up
+4. Oil Change
+5. Engine Repair
+Make a selection:
+(Each selection adds the task and prints its own message.)
+(Asks if they would like to perform another task, if not, returns to shop_menu)
+
+
+
+
+
+Making a selection of 3 in the shop_menu will print all services and their prices:
+
+Our services include:
+---------------------
+
+Scheduled Maintenance: $750 (cost of labor only)
+Brake Change: $150 (cost of parts) + $400 (cost of labor)
+Tune-Up: $225 (cost of labor only)
+Oil Change: $45 (cost of labor only)
+Engine Repair: $325 (cost of parts) + $2675 (cost of labor)
+
+
+
+
+Making a selection of 4 in the shop will print the vehicle.
+
+This will call the print_vehicle method of whichever instance of vehicle
+the data happens to be.
+
+
+
+
+
+Making a selection of 5 in the shop will print all vehicles.
+
+This works like the print_node method in that it traverses the array and
+prints everything recursively.
+
+
+
+
+
+Making a selection of 6 will print the check_out_vehicle menu:
+
+Which vehicle would you like to check out? (Enter id):
+(Validates the id. Returns to shop_menu if invalid.)
+
+
+Otherwise, prints the invoice for the vehicle.
+
+
+Before you head out, here's your invoice:
+Your vehicle: (prints one vehicle)
+
+Services provided: (prints bill)
+
+Thank you for choosing Ian's Auto Repair!
+
+
+
+
+
+Making a selection of 7 will print out the shop's revenue and total tasks.
+
+Every time a task is inserted, the revenue is updated and the total number
+of that task is incremented. 
+
+Today's Totals
+--------------
+
+Total Revenue: $ (revenue)
+Scheduled Maintenances Performed: total_jobs[0]
+Brake Changes Performed: total_jobs[1]
+Tune-Ups Performed: total_jobs[2]
+Oil Changes Performed: total_jobs[3]
+Engine Repairs Performed: total_jobs[4]
+
+
+
+
+
+Making a selection of 8 will start a new day.
+Revenue will be set back to 0,
+All total jobs will be set back to 0,
+and all cars will be destroyed using a method that works like destroy_tree.
+(I will call it destroy_car)
+
+
+
+
+Making a selection of 9 will exit the program.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+===============
+|   Overall   |
+===============
+
+
+With everything detailed, it seems like I have quite a bit to do.
+Part 2 definitely sounds easier, but I will have to be careful to
+make sure that everything works exactly how I planned it out to.
+
+Part 1 will take a lot of time. I will use as many resources as I can
+to make sure that it runs exactly how it should. Even though implementing it
+will result in a lot of debugging, if I can work through them it will be
+quite the reward.
+
